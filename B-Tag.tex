@@ -68,10 +68,10 @@ Das Drehzentrum R befindet sich im Schnittpunkt der beiden Geraden.
 \end{figure}
 
 \textbf{Welche St\"ocke passen auf jeden Fall nicht durch?} (Angenommen, der Gang ist 1 breit) \\
-Die Stelle, an der die maximale Länge am kleinsten ist, ist wenn der Stock in einem $\frac{\pi}{4}$ Winkel zu den Wänden steht. Deshalb darf ein Stock auf jeden Fall nicht länger als die Diagonale an dieser Stelle sein, also $2\sqrt{2}$.
+Die Stelle, an der die maximale Länge am kleinsten ist, ist dort, wo der Stock in einem $\frac{\pi}{4}$ Winkel zu den Wänden steht. Deshalb darf ein Stock auf jeden Fall nicht länger als die Diagonale an dieser Stelle sein, also $2\sqrt{2}$.
 
 \textbf{Passt der $2\sqrt{2}$ Stock durch den Gang?} \\
-Wir nehmen an, der Stock berührt die ganze zeit die innere Ecke (damit er durch passt). Dann haben wir die gleiche Situation wie in A1. Die maximale Länge des Stocks wird immer größer, je weiter die Winkel zu den Wänden von $\frac{\pi}{4}$ sind. Deshalb passt ein Stock bei jedem Winkel, wenn er auch bei $\frac{\pi}{4}$ passt.
+Wir nehmen an, der Stock berührt die ganze Zeit die innere Ecke (damit er durchpasst). Dann haben wir die gleiche Situation wie in A1. Die maximale Länge des Stocks wird immer größer, je weiter die Winkel zu den Wänden von $\frac{\pi}{4}$ sind. Deshalb passt ein Stock bei jedem Winkel, wenn er auch bei $\frac{\pi}{4}$ passt.
 
 \subsection{Aufgabe 4: Strategien f\"ur den l\"angsten Stock}
 \textbf{Wie muss das Drehzentrum R gew\"ahlt werden, damit der l\"angstm\"oglichste Stock in einer einzigen Drehbewegung um die Ecke bewegt werden kann?} \\
@@ -90,7 +90,7 @@ B beschreibt die Breite des Ganges. \\
 Legt man nun ein Rechteck mit der Seitenlänge 2B in die Ecke des Ganges, befindet sich das Drehzentrum R an der gegenüberliegenden Spitze des Rechtecks. \\
 Der Stock beginnt seine Drehung, welche am \"au\ss eren Rand beginnt, sobald er sich unterhalb des Drehzentrums R befindet.
 
-Die Folgende Fl\"ache wird also \"uberstrichen:
+Die folgende Fl\"ache wird also \"uberstrichen:
 \begin{figure}[H] 
         \centering
         \includegraphics[width=4cm]{img/A4_2.png}
@@ -131,7 +131,7 @@ Allgemeine Formel f\"ur das Maximale $a$ mit einer festgesetzten seitenl\"ange $
 
 \[ a = 2(\sqrt{2}-b) \]
 
-Daraus kann man eine Funktion der maximalen Fl\"ache $A_{max}(b)$ des rechtecks $a \times b$ konstruieren:
+Daraus kann man eine Funktion der maximalen Fl\"ache $A_{max}(b)$ des Rechtecks $a \times b$ konstruieren:
 
 \[ A_{max}(b) = a b = 2c(\sqrt{2}-b) \]
 
@@ -179,14 +179,14 @@ Eingesetzt:
 \end{figure}
 
 Die kürzere Seite ($b$) darf natürlich nicht länger als 1 sein, sonst passt das ganze L nicht durch den Gang. \\
-Auch darf $a$ nicht \"uber $2\sqrt{2}$ sein, sonst passt die ganze Form schräg gestellt in die Ecke. \\
-Eine solche L-Form ($1+2\sqrt{2}$) müsste auch durch passen: Die lange Seite kann so durch geschoben werden, dass die Enden immer die Außenwand berühren. Die kurze passt dann auch, da sie immer die Außenwand mit einem Ende berührt und im ``schlimmsten'' fall die Innenwand mit dem anderen berührt.
+Auch darf $a$ nicht \"uber $2\sqrt{2}$ sein, sonst passt nicht die ganze Form schräg gestellt in die Ecke. \\
+Eine solche L-Form ($1+2\sqrt{2}$) müsste auch durchpassen: Die lange Seite kann so durch geschoben werden, dass die Enden immer die Außenwand berühren. Die kurze passt dann auch, da sie immer die Außenwand mit einem Ende berührt und im ``schlimmsten'' Fall die Innenwand mit dem anderen berührt.
 
 \section{Forschungsauftrag}
 \textbf{Was ist das größte Ding, was durchgejagt werden kann?}
 
 \subsection{Rechteck}
-Was ist das größte Rechteck, was man durch den Gang schieben kann? Ohne drehen ist es natürlich ein $1\times 1$ Quadrat. Mit drehen ist wieder die Funktion $A_{max}(b)$ hilfreich. Sie beschreibt das Rechteck der größten Fläche was noch durch passt, abhängig von einer festen kürzeren Seitenlänge $b$:
+Was ist das größte Rechteck, was man durch den Gang schieben kann? Ohne drehen ist es natürlich ein $1\times 1$ Quadrat. Mit drehen ist wieder die Funktion $A_{max}(b)$ hilfreich. Sie beschreibt das Rechteck der größten Fläche was noch durchpasst, abhängig von einer festen kürzeren Seitenlänge $b$:
 
 \[ A_{max}(b) = 2b(\sqrt{2}-b) \]
 
@@ -195,7 +195,7 @@ Was ist das größte Rechteck, was man durch den Gang schieben kann? Ohne drehen
         \includegraphics[width=6cm]{img/FA_1.png}
 \end{figure}
 
-Diese Funktion beschreibt also alle größten Rechtecke, die durch schieben \textit{und} drehen durch passen. Dabei ist der Hochpunkt das größtmögliche Rechteck. Um den Hochpunkt zu finden leiten wir zuerst ab:
+Diese Funktion beschreibt also alle größten Rechtecke, die durch schieben \textit{und} drehen durchpassen. Dabei ist der Hochpunkt das größtmögliche Rechteck. Um den Hochpunkt zu finden leiten wir zuerst ab:
 
 \[ A_{max}'(b) = 2(\sqrt{2}-2b) \]
 
@@ -203,6 +203,10 @@ Um dann davon die Nullstelle bei $b = \frac{1}{\sqrt{2}}$ zu finden. Hier ist da
 
 \[ A_{max}(\frac{1}{\sqrt{2}}) = \frac{2}{\sqrt{2}}(\sqrt{2} - \frac{1}{\sqrt{2}}) = 1 \]
 
-also erstaunlicherweise der gleiche Inhalt wie ein $1\times 1$ quadrat. Ein Rechteck mit demg Flächeninhalt > 1 kann also einfach nicht durch den Gang geschoben werden, egal ob quadratisch oder nicht.
+also erstaunlicherweise der gleiche Inhalt wie ein $1\times 1$ quadrat. Ein Rechteck mit dem Flächeninhalt > 1 kann also einfach nicht durch den Gang geschoben werden, egal ob quadratisch oder nicht.
+
+\subsection{U-Form}
+
+Was ist mit einer U-Form?
 
 \end{document}
