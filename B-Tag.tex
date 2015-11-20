@@ -129,9 +129,9 @@ Allgemeine Formel f\"ur das Maximale $a$ mit einer festgesetzten seitenl\"ange c
 
 \[ a = 2(\sqrt{2}-c) \]
 
-Daraus kann man eine Funktion der maximalen Fl\"ache A(c) des rechtecks $a \times c$ konstruieren:
+Daraus kann man eine Funktion der maximalen Fl\"ache $A_{max}(c)$ des rechtecks $a \times c$ konstruieren:
 
-\[ A(c) = a c = 2c(\sqrt{2}-c) \]
+\[ A_{max}(c) = a c = 2c(\sqrt{2}-c) \]
 
 \begin{figure}[htbp] 
         \centering
@@ -172,5 +172,28 @@ Eingesetzt:
 Die kürzere Seite ($b$) darf natürlich nicht länger als 1 sein, sonst passt das ganze L nicht durch den Gang. \\
 Auch darf $a$ nicht \"uber $2\sqrt{2}$ sein, sonst passt die ganze Form schräg gestellt in die Ecke. \\
 Eine solche L-Form ($1+2\sqrt{2}$) müsste auch durch passen: Die lange Seite kann so durch geschoben werden, dass die Enden immer die Außenwand berühren. Die kurze passt dann auch, da sie immer die Außenwand mit einem Ende berührt und im ``schlimmsten'' fall die Innenwand mit dem anderen berührt.
+
+\section{Forschungsauftrag}
+\textbf{Was ist das größte Ding, was durchgejagt werden kann?}
+
+\subsection{Rechteck}
+Was ist das größte Rechteck, was man durch den Gang schieben kann? Ohne drehen ist es natürlich ein $1\times 1$ Quadrat. Mit drehen ist wieder die Funktion $A_{max}(a)$ hilfreich. Sie beschreibt das Rechteck der größten Fläche was noch durch passt, abhängig von einer festen Seitenlänge $a$:
+
+\[ A_{max}(a) = 2a(\sqrt{2}-a) \]
+
+\begin{figure}[htbp] 
+        \centering
+        \includegraphics[width=6cm]{img/FA_1.png}
+\end{figure}
+
+Diese Funktion beschreibt also alle größten Rechtecke, die durch schieben \textit{und} drehen durch passen. Dabei ist der Hochpunkt das größtmögliche Rechteck. Um den Hochpunkt zu finden leiten wir zuerst ab:
+
+\[ A_{max}'(a) = 2(\sqrt{2}-2a) \]
+
+Um dann davon die Nullstelle bei $a = \frac{1}{\sqrt{2}}$ zu finden. Hier ist das größte Rechteck, mit einer Fläche von
+
+\[ A_{max}(\frac{1}{\sqrt{2}}) = \frac{2}{\sqrt{2}}(\sqrt{2} - \frac{1}{\sqrt{2}}) = 1 \]
+
+also erstaunlicherweise der gleiche Inhalt wie ein $1\times 1$ quadrat. Ein Rechteck mit dem Flächeninhalt > 1 kann also einfach nicht durch den Gang geschoben werden, egal ob quadratisch oder nicht.
 
 \end{document}
