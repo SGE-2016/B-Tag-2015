@@ -3,6 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
 \usepackage{graphicx}
+\usepackage[german]{babel}
 
 \title{B-Tag 2015}
 \author{Thomas, Josua, Niclas, Andreas}
@@ -14,14 +15,14 @@
 
 \section{Aufgaben}
 \subsection{Aufgabe 1: Dreiecksgeometrie}
-Diagramm:
+\textbf{Aufgabenstellung: Ist $\overline{FE}$ länger als $\overline{CA}$?}
 
 \begin{figure}[htbp] 
         \centering
         \includegraphics[width=6cm]{img/A1_1.png}
 \end{figure}
 
-Wir wollen eine Funktion $\overline{FE}(\theta)$ aufstellen, und zeigen, dass diese immer gr\"o\ss er als CA ist.
+Wir wollen eine Funktion $\overline{FE}(\theta)$ aufstellen, und zeigen, dass diese immer gr\"o\ss er als $\overline{CA}$ ist.
 
 1. Wie lang ist die Strecke $\overline{FM}$?
 \[ \overline{FM}(\theta) = \frac{M_y}{sin(\theta)} \]
@@ -42,5 +43,16 @@ Jetzt setzen wir $\overline{FE}' = 0$, um den Tiefpunkt von $\overline{FE}(\thet
 \subsection{Aufgabe 2: Verschiebungen}
 
 \subsection{Aufgabe 3: St\"ocke}
+
+\begin{figure}[htbp] 
+        \centering
+        \includegraphics[width=6cm]{img/A3_1.png}
+\end{figure}
+
+\textbf{Welche St\"ocke passen auf jeden Fall nicht durch?} (Angenommen, der Gang ist 1 breit) \\
+Die Stelle, an der die maximale Länge am kleinsten ist, ist wenn der Stock in einem $\frac{\pi}{2}$ Winkel zu den Wänden steht. Deshalb darf ein Stock auf jeden Fall nicht länger als die Diagonale an dieser Stelle sein, also $2\sqrt{2}$.
+
+\textbf{Passt der $2\sqrt{2}$ Stock durch den Gang?} \\
+Wir nehmen an, der Stock berührt die ganze zeit die innere Ecke (damit er durch passt). Dann haben wir die Gleiche Situation wie in A1. Die maximale Länge des Stocks wird immer größer, je weiter die Winkel zu den Wänden von $\frac{\pi}{2}$ sind. Deshalb passt ein Stock bei jedem Winkel, wenn er auch bei $\frac{\pi}{2}$ passt.
 
 \end{document}
