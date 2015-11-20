@@ -119,19 +119,19 @@ Wenn die Breite 0.5 ist, muss erst einmal ausgerechnet werden, was die maximale 
         \includegraphics[width=6cm]{img/A5_1.png}
 \end{figure}
 
-\[ b = \sqrt{2} - 0.5 \]
-\[ \tan(\frac{\pi}{4}) = \frac{2b}{a} \Leftrightarrow  a = 2b  = 2(\sqrt{2}-0.5)  \]
+\[ s = \sqrt{2} - 0.5 \]
+\[ s = \frac{a}{2} \Leftrightarrow a = 2s = 2(\sqrt{2}-0.5) \]
 
 $a$ w\"are also in dem Fall ca. 1.83, was einen Fl\"acheninhalt von ca. 0.914 ergibt.
 
 \textbf{Welche Seitenl\"angen hat das Rechteck mit dem gr\"o\ss ten Fl\"acheninhalt, was noch durch den Gang passt, wobei die k\"urzere Seite nicht \"uber 0.5 ist?} \\
-Allgemeine Formel f\"ur das Maximale $a$ mit einer festgesetzten seitenl\"ange c:
+Allgemeine Formel f\"ur das Maximale $a$ mit einer festgesetzten seitenl\"ange b:
 
-\[ a = 2(\sqrt{2}-c) \]
+\[ a = 2(\sqrt{2}-b) \]
 
-Daraus kann man eine Funktion der maximalen Fl\"ache $A_{max}(c)$ des rechtecks $a \times c$ konstruieren:
+Daraus kann man eine Funktion der maximalen Fl\"ache $A_{max}(b)$ des rechtecks $a \times b$ konstruieren:
 
-\[ A_{max}(c) = a c = 2c(\sqrt{2}-c) \]
+\[ A_{max}(b) = a b = 2c(\sqrt{2}-b) \]
 
 \begin{figure}[htbp] 
         \centering
@@ -140,8 +140,8 @@ Daraus kann man eine Funktion der maximalen Fl\"ache $A_{max}(c)$ des rechtecks 
 
 Man kann einfach ablesen, dass die kurze Seite nicht unter 0.5 sein sollte. Daher wird das selbe Rechteck wie vorhin gesucht:
 
-\[ c = 0.5 \]
-\[ a = 2(\sqrt{2}-c) \approx 1.83 \]
+\[ b = 0.5 \]
+\[ a = 2(\sqrt{2}-b) \approx 1.83 \]
 
 \subsection{Aufgabe 6: Alle Rechtecke}
 
@@ -177,9 +177,9 @@ Eine solche L-Form ($1+2\sqrt{2}$) müsste auch durch passen: Die lange Seite ka
 \textbf{Was ist das größte Ding, was durchgejagt werden kann?}
 
 \subsection{Rechteck}
-Was ist das größte Rechteck, was man durch den Gang schieben kann? Ohne drehen ist es natürlich ein $1\times 1$ Quadrat. Mit drehen ist wieder die Funktion $A_{max}(a)$ hilfreich. Sie beschreibt das Rechteck der größten Fläche was noch durch passt, abhängig von einer festen Seitenlänge $a$:
+Was ist das größte Rechteck, was man durch den Gang schieben kann? Ohne drehen ist es natürlich ein $1\times 1$ Quadrat. Mit drehen ist wieder die Funktion $A_{max}(b)$ hilfreich. Sie beschreibt das Rechteck der größten Fläche was noch durch passt, abhängig von einer festen kürzeren Seitenlänge $b$:
 
-\[ A_{max}(a) = 2a(\sqrt{2}-a) \]
+\[ A_{max}(b) = 2b(\sqrt{2}-b) \]
 
 \begin{figure}[htbp] 
         \centering
@@ -188,12 +188,12 @@ Was ist das größte Rechteck, was man durch den Gang schieben kann? Ohne drehen
 
 Diese Funktion beschreibt also alle größten Rechtecke, die durch schieben \textit{und} drehen durch passen. Dabei ist der Hochpunkt das größtmögliche Rechteck. Um den Hochpunkt zu finden leiten wir zuerst ab:
 
-\[ A_{max}'(a) = 2(\sqrt{2}-2a) \]
+\[ A_{max}'(b) = 2(\sqrt{2}-2b) \]
 
-Um dann davon die Nullstelle bei $a = \frac{1}{\sqrt{2}}$ zu finden. Hier ist das größte Rechteck, mit einer Fläche von
+Um dann davon die Nullstelle bei $b = \frac{1}{\sqrt{2}}$ zu finden. Hier ist das größte Rechteck, mit einer Fläche von
 
 \[ A_{max}(\frac{1}{\sqrt{2}}) = \frac{2}{\sqrt{2}}(\sqrt{2} - \frac{1}{\sqrt{2}}) = 1 \]
 
-also erstaunlicherweise der gleiche Inhalt wie ein $1\times 1$ quadrat. Ein Rechteck mit dem Flächeninhalt > 1 kann also einfach nicht durch den Gang geschoben werden, egal ob quadratisch oder nicht.
+also erstaunlicherweise der gleiche Inhalt wie ein $1\times 1$ quadrat. Ein Rechteck mit demg Flächeninhalt > 1 kann also einfach nicht durch den Gang geschoben werden, egal ob quadratisch oder nicht.
 
 \end{document}
