@@ -36,7 +36,6 @@ Wir wollen eine Funktion $\overline{FE}(\theta)$ aufstellen, und zeigen, dass di
 
 Jetzt muss gezeigt werden, dass der Tiefpunkt von $\overline{FE}(\theta)$ den Wert $\overline{AC}$ hat. Dazu wird $\overline{FE}(\theta)$ zuerst abgeleitet, um den TP zu finden:
 
-%\[ \overline{FE}'(\theta) = - \frac{M_y \cos(\theta)}{(\sin(\theta))^2} + \frac{M_x \cos(\theta - (\pi/2))}{\sin((\pi/2)-\theta)^2} \]
 \[ \overline{FE}'(\theta) = \frac{M_x (\sin(\theta))^3 - M_y (\cos(\theta))^3)}{(\sin(\theta))^2 (\cos(\theta))^2} \]
 
 Jetzt setzen wir $\overline{FE}' = 0$, um den Tiefpunkt von $\overline{FE}(\theta)$ bei $\theta = \frac{\pi}{4}$ zu finden, und sehen, dass $FE(\frac{\pi}{4}) = CA$ ist. Daher ist $\overline{FE}$ immer länger als $\overline{CA}$ (au\ss er bei $\theta=\frac{\pi}{2}$).
@@ -67,10 +66,10 @@ Das Drehzentrum R befindet sich im Schnittpunkt der beiden Geraden.
 \end{figure}
 
 \textbf{Welche St\"ocke passen auf jeden Fall nicht durch?} (Angenommen, der Gang ist 1 breit) \\
-Die Stelle, an der die maximale Länge am kleinsten ist, ist wenn der Stock in einem $\frac{\pi}{2}$ Winkel zu den Wänden steht. Deshalb darf ein Stock auf jeden Fall nicht länger als die Diagonale an dieser Stelle sein, also $2\sqrt{2}$.
+Die Stelle, an der die maximale Länge am kleinsten ist, ist wenn der Stock in einem $\frac{\pi}{4}$ Winkel zu den Wänden steht. Deshalb darf ein Stock auf jeden Fall nicht länger als die Diagonale an dieser Stelle sein, also $2\sqrt{2}$.
 
 \textbf{Passt der $2\sqrt{2}$ Stock durch den Gang?} \\
-Wir nehmen an, der Stock berührt die ganze zeit die innere Ecke (damit er durch passt). Dann haben wir die Gleiche Situation wie in A1. Die maximale Länge des Stocks wird immer größer, je weiter die Winkel zu den Wänden von $\frac{\pi}{2}$ sind. Deshalb passt ein Stock bei jedem Winkel, wenn er auch bei $\frac{\pi}{2}$ passt.
+Wir nehmen an, der Stock berührt die ganze zeit die innere Ecke (damit er durch passt). Dann haben wir die Gleiche Situation wie in A1. Die maximale Länge des Stocks wird immer größer, je weiter die Winkel zu den Wänden von $\frac{\pi}{4}$ sind. Deshalb passt ein Stock bei jedem Winkel, wenn er auch bei $\frac{\pi}{4}$ passt.
 
 \subsection{Aufgabe 4: Strategien f\"ur den l\"angsten Stock}
 \textbf{Wie muss das Drehzentrum R gew\"ahlt werden, damit der l\"angstm\"oglichste Stock in einer einzigen Drehbewegung um die Ecke bewegt werden kann?} \\
@@ -113,7 +112,7 @@ Und hier die vom Stock \"uberstrichene Fl\"ache:
 \textbf{Wie groß ist der Flächeninhalt des größten Rechtecks, das um die Ecke bewegt werden kann,
 wenn die kürzere Seite des Rechtecks die Länge 0,5 hat?} \\
 Wenn die H\"ohe des Rechtecks 0.5 ist, ist die gr\"o\ss te Breite 1. Dann hat man eine Fl\"ache von 0.5.
-Wenn die Breite 0.5 ist, muss erst einmal ausgerechnet werden, was die maximale H\"ohe ist. Das Rechteck muss im Winkel von $\frac{\pi}{2}$ noch passen: 
+Wenn die Breite 0.5 ist, muss erst einmal ausgerechnet werden, was die maximale H\"ohe ist. Das Rechteck muss im Winkel von $\frac{\pi}{4}$ noch passen: 
 
 \begin{figure}[htbp] 
         \centering
@@ -121,9 +120,23 @@ Wenn die Breite 0.5 ist, muss erst einmal ausgerechnet werden, was die maximale 
 \end{figure}
 
 \[ b = \sqrt{2} - 0.5 \]
-\[ \tan(\frac{\pi}{2}) = \frac{2b}{a} \Leftrightarrow  a = \frac{2b}{\tan(\pi/2)} \]
+\[ \tan(\frac{\pi}{4}) = \frac{2b}{a} \Leftrightarrow  a = 2b  = 2(\sqrt{2}-0.5)  \]
 
 $a$ w\"are also in dem Fall ca. 1.83, was einen Fl\"acheninhalt von ca. 0.914 ergibt.
 
+\textbf{Welche Seitenl\"angen hat das Rechteck mit dem gr\"o\ss ten Fl\"acheninhalt, was noch durch den Gang passt, wobei die k\"urzere Seite nicht \"uber 0.5 ist?} \\
+Allgemeine Formel f\"ur das Maximale $a$ mit einer festgesetzten seitenl\"ange c:
+
+\[ a = 2(\sqrt{2}-c) \]
+
+Daraus kann man eine Funktion der Fl\"ache A(c) konstruieren:
+
+\[ A(c) = a c = 2c(\sqrt{2}-c) \]
+
+Von dieser Funktion werden nun die Hochpunkte gesucht:
+
+\[ A'(c) = 2(\sqrt{2}-c) = 0 \]
+
+Der Hochpunkt befindet sich bei $c = \frac{1}{\sqrt{2}}$. Hier w\"aren aber beide Seitenl\"angen l\"anger als 0.5, also 
 
 \end{document}
